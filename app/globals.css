@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Make the text area of the input show the I-beam */
+input[type="number"] {
+    cursor: text;
+  }
+  
+  /* Make the up/down arrows themselves show the pointer */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    cursor: pointer;
+  }
+  
+
+
+
