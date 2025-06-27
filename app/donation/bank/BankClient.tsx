@@ -20,7 +20,6 @@ const stripePromise = loadStripe(
 export default function BankClient() {
   const [clientSecret, setClientSecret] = useState<string | null>(null);
   const params = useSearchParams();
-  const router = useRouter();
 
   const amt = parseInt(params?.get("amt") ?? "0", 10) || 0;
   const monthly = params?.get("monthly") === "true";
